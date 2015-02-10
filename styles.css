@@ -3,7 +3,8 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background: url("img/bg.jpg");
+  overflow: hidden;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -19,6 +20,14 @@ body, a:link, a:visited, a:active{
 }
 .title{
   background-color: #777;
+}
+
+.dance-area {
+  background-color: #000;
+  position: fixed;
+  bottom: 0px;
+  height: 5%;
+  width: 100%;
 }
 .dancer, .dancer-two{
   border:10px solid yellow;

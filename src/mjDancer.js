@@ -7,7 +7,8 @@ var mjDancer = function(top, left, timeBetweenSteps){
   this.setPosition(top, left);
   var context = this;
   $(this.$node).click(function(){
-    context.$node.replaceWith( "<img src='img/mj_action2.gif' class='mj-dancer' style='top: "+top+"px; left: "+left+"px;'>" );
+    //note to self, replace back to top
+    context.$node.replaceWith( "<img src='img/mj_dance2.gif' class='mj-dancer' style='bottom: "+top+"px; left: "+left+"px;'>" );
   });
 };
 mjDancer.prototype = Object.create(Dancer.prototype);
