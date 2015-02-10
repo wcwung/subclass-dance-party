@@ -21,12 +21,14 @@ $(document).ready(function(){
     var dancerMakerFunction = window[dancerMakerFunctionName];
 
     // make a dancer with a random position
-
-    var dancer = dancerMakerFunction(
-      $("body").height() * Math.random(),
-      $("body").width() * Math.random(),
+    var top = $("body").height() * Math.random();
+    var left = $("body").width() * Math.random();
+    var dancer = new dancerMakerFunction(
+      top,
+      left,
       Math.random() * 1000
     );
+    // console.log("TOP AND LEFT: " + top + ", " + left);
     $('body').append(dancer.$node);
   });
 });

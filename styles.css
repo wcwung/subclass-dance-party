@@ -20,8 +20,15 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }
-.dancer{
-  border:10px solid red;
+.dancer, .dancer-two{
+  border:10px solid yellow;
   border-radius:10px;
+  position:absolute;
+}
+
+.dancer-two {
+  border: 10px solid red;
+}
+.mj-dancer {
   position:absolute;
 }
