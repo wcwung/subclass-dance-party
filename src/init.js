@@ -30,6 +30,22 @@ $(document).ready(function(){
     );
     // console.log("TOP AND LEFT: " + top + ", " + left);
     $('body').append(dancer.$node);
+    window.dancers.push(dancer);
+  });
+
+
+  // Line Up dancers
+
+  $(".lineUpDancers").on("click", function(event){
+    // $img = $('img');
+    // console.log("test");
+    // window.dancers.push($img);
+    for (var i = 0; i < window.dancers.length; i++) {
+      // console.log(window.dancers[0][i]);
+      // Dancer.prototype.lineUp.call(window.dancers[0][i]);
+      window.dancers[i].lineUp();
+    }
+
   });
 });
 

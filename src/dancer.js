@@ -22,7 +22,7 @@ Dancer.prototype.step = function(){
   // setTimeout(function(){
   //   context.step();
   // }, this.timeBetweenSteps);
-  setTimeout(this.step.bind(this), this.timeBetweenSteps);
+  this.timeout = setTimeout(this.step.bind(this), this.timeBetweenSteps);
 };
 
 Dancer.prototype.setPosition = function(top, left){
@@ -35,4 +35,10 @@ Dancer.prototype.setPosition = function(top, left){
   };
   // console.log(this.$node, top, left);
   this.$node.css(styleSettings);
+};
+
+Dancer.prototype.lineUp = function() {
+  console.log(this);
+  clearTimeout(this.timeout);
+  this.setPosition(150, 100);
 };

@@ -16,9 +16,4 @@ mjDancer.prototype.constructor = mjDancer;
 
 mjDancer.prototype.step = function(){
   Dancer.prototype.step.call(this);
-  // var context = this;
-  // this.newTop = this.top;
-  // this.newLeft = this.left;
-  // this.$node.replaceWith( "<img src='img/mj_action1.gif' class='mj-dancer' style='top: "+this.top+"px; left: "+this.left+"px;'>" );
-  // this.$node.replaceWith( "<img src='img/mj_dance2.gif' class='mj-dancer' style='top: "+this.top+"px; left: "+this.left+"px;'>" ).delay( 800 );
 };

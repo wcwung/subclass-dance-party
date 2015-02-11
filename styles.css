@@ -17,7 +17,7 @@ body, a:link, a:visited, a:active{
 a {
   margin-right: 25px;
 }
-.title, .addDancerButton{
+.title, .addDancerButton, .lineUpDancers, .bustMoves{
   padding: 20px 12px;
   float:right;
 }
@@ -47,4 +47,9 @@ a {
 }
 .mj-dancer {
   position:absolute;
+  z-index: 1;
+}
+.mj-moonwalker {
+  position:absolute;
+  z-index: 2;
 }
